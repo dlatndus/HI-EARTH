@@ -2452,7 +2452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1415214446}
-  jump: 7
+  jump: 10
 --- !u!114 &1709311845
 MonoBehaviour:
   m_ObjectHideFlags: 0
