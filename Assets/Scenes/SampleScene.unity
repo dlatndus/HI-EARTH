@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 296179177}
   - component: {fileID: 296179176}
   - component: {fileID: 296179178}
+  - component: {fileID: 296179179}
   m_Layer: 0
   m_Name: rock_break
   m_TagString: Untagged
@@ -599,7 +600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296179175}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.51, y: 0.89, z: -90}
+  m_LocalPosition: {x: 42.55, y: 0.74, z: -90}
   m_LocalScale: {x: 0.8639, y: 0.8639, z: 1}
   m_Children: []
   m_Father: {fileID: 507951263}
@@ -618,19 +619,39 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.32744694, y: -0.30631816}
+  m_Offset: {x: 0.32744694, y: 0.08812451}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.5004473, y: 6}
+    oldSize: {x: 5.5004473, y: 5.2400002}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.127295, y: 4.7958508}
+  m_Size: {x: 4.127295, y: 4.560907}
   m_EdgeRadius: 0
+--- !u!114 &296179179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296179175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69102b446c102e64cba87267010ed8bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 6337769596745340354, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: 9160463374148156293, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: 1925881754706275120, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: 9036088876440089424, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: -3271313264383685331, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: -8619119196899105435, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
+  - {fileID: 3969145409498600362, guid: 275b43946c5b8964dbcb9315fbb1c835, type: 3}
 --- !u!1 &364433092
 GameObject:
   m_ObjectHideFlags: 0
