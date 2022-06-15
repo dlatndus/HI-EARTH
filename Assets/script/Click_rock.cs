@@ -22,6 +22,12 @@ public class Click_rock : MonoBehaviour
         if (cnt > 0)
         {
             spriteRenderer.sprite = sprites[cnt];
+            if (cnt==6)
+            {
+                gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(-0.8f, -1.5f);
+                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.5f, 2.0f);
+
+            }
         }
     }
 
