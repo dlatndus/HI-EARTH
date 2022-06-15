@@ -10,6 +10,7 @@ public class Jump : MonoBehaviour
     public Transform player;
     public float jump;
     bool isjump=false;
+    float thisy;
     Rigidbody2D rigid;
     Animator animator;
     // Start is called before the first frame update
@@ -23,8 +24,7 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        animator.SetBool("isjump", false);
-        float thisy = player.position.y;
+        thisy = player.position.y;
         if (isjump)
         {
             rigid.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
@@ -33,8 +33,9 @@ public class Jump : MonoBehaviour
                 isjump = false;
             }
         }
-        if (Mathf.Abs(rigid.velocity.y) > 0.5) animator.SetBool("isjump", true);
-        else animator.SetBool("isjump", false);
+
+        if (Mathf.Abs(rigid.velocity.y) < 7) animator.SetBool("isjump", false);
+        else animator.SetBool("isjump", true);
     }
     public void Up()
     {
@@ -42,6 +43,6 @@ public class Jump : MonoBehaviour
     }
     public void Down()
     {
-        if(t.istouch)isjump = true;
+        if (t.istouch) isjump = true;
     }
 }

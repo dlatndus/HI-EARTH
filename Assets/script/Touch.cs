@@ -17,21 +17,20 @@ public class Touch : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-
-        if (col.collider.tag == "floor")
+        if (col.collider.tag == "Untagged")
         {
-            istouch = true;
+                istouch = true;
 
         }
 
     }
     void OnCollisionExit2D(Collision2D col)
     {
+        if (col.collider.tag == "Untagged")
 
-        if (col.collider.tag == "floor")
+        if (col.collider.tag == "Untagged")
         {
-
-            istouch = false;
+                istouch = false;
 
         }
 

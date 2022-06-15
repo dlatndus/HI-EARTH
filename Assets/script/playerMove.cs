@@ -30,7 +30,7 @@ public class playerMove : MonoBehaviour
             player.position += Vector3.left * Speed * Time.deltaTime;
             player.transform.localScale = new Vector3(-0.45f, 0.45f, 1f);
         }
-        if (Mathf.Abs(rigid.velocity.x) < 0.03) animator.SetBool("iswalk", false);
+        if (Mathf.Abs(rigid.velocity.x) < 0.3) animator.SetBool("iswalk", false);
         else animator.SetBool("iswalk", true);
     }
 
