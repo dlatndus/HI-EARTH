@@ -33,16 +33,21 @@ public class Jump : MonoBehaviour
                 isjump = false;
             }
         }
-
+        /*
         if (Mathf.Abs(rigid.velocity.y) < 7) animator.SetBool("isjump", false);
-        else animator.SetBool("isjump", true);
+        else animator.SetBool("isjump", true);*/
     }
     public void Up()
     {
         isjump = false;
+        animator.SetBool("isjump", false);
     }
     public void Down()
     {
-        if (t.istouch) isjump = true;
+        if (t.istouch)
+        {
+            isjump = true;
+            animator.SetBool("isjump", true);
+        }
     }
 }
